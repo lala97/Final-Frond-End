@@ -47,7 +47,7 @@ body {
 
 .textLeft, .img-left {
   transform: translateX(-800px);
-  transition: all 1s; }
+  transition: all 1s ease; }
 
 .textRight, .img-right {
   transform: translateX(800px);
@@ -55,17 +55,40 @@ body {
 
 #head {
   background: url(../../img/background.jpg);
-  min-height: 666px;
   background-attachment: fixed;
   background-position: center; }
   #head a {
     color: rgba(240, 240, 240, 0.8);
     text-transform: uppercase;
-    font-size: 14px;
-    transition: all 0.5s linear; }
+    font-size: 14px; }
   #head a:hover {
     background: transparent;
     color: aqua; }
+  #head #launch {
+    margin: 0 auto;
+    min-height: 640px;
+    color: white; }
+    #head #launch #top1 {
+      display: none;
+      padding-top: 150px; }
+      #head #launch #top1 h1 {
+        font-size: 4em; }
+      #head #launch #top1 p {
+        margin-top: 25px;
+        font-size: 1.5em; }
+    #head #launch .btn-info {
+      margin-top: 3%;
+      padding: 10px 45px;
+      margin-right: 1.2%; }
+    #head #launch button:last-child {
+      margin-top: 3%;
+      padding: 10px 25px;
+      background: transparent;
+      border: 1px solid white; }
+      #head #launch button:last-child:hover {
+        background-color: white;
+        color: #20befa;
+        transition: all 0.5s; }
 
 #logo {
   background: #F0F0F0;
@@ -81,139 +104,139 @@ body {
     transform: translateY(-100px);
     transition: all 0.2s; }
 
-#about {
+#aboutSection {
   min-height: 585px;
   background: white;
   padding-top: 60px;
   overflow: hidden;
   transition: all 0.5s linear; }
-  #about .second-tab, #about .third-tab {
+  #aboutSection .second-tab, #aboutSection .third-tab {
     display: none; }
-  #about .first-tab, #about .second-tab, #about .third-tab {
+  #aboutSection .first-tab, #aboutSection .second-tab, #aboutSection .third-tab {
     margin-top: 5%; }
-  #about button {
+  #aboutSection button {
     width: 100%;
     border: 1px solid lightgray;
     border-radius: 0;
     background: transparent;
     height: 4em; }
-  #about .active {
+  #aboutSection .active {
     background: #1AC6FF; }
-  #about .col-md-2 {
+  #aboutSection .col-md-2 {
     padding: 0; }
-  #about .third-tab .info {
+  #aboutSection .third-tab .info {
     padding-bottom: 7%; }
-    #about .third-tab .info h1 {
+    #aboutSection .third-tab .info h1 {
       font-size: 45px; }
-  #about .down i {
+  #aboutSection .down i {
     font-size: 5em;
     color: #1AC6FF; }
-  #about .down p {
+  #aboutSection .down p {
     font-size: 17px; }
 
-#process {
+#processSection {
   overflow: hidden; }
-  #process img {
+  #processSection img {
     padding-bottom: 100px; }
-  #process .miniText {
+  #processSection .miniText {
     margin: 20px 0 10px;
     line-height: 26px;
     font-size: 15px; }
-  #process .down p {
+  #processSection .down p {
     font-size: 16px; }
 
-#features {
+#featuresSection {
   background: #F0F0F0;
   overflow: hidden; }
-  #features .section-content {
+  #featuresSection .section-content {
     margin-top: 115px; }
-    #features .section-content h4 {
+    #featuresSection .section-content h4 {
       color: #1AC6FF;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 17px; }
-    #features .section-content p {
+    #featuresSection .section-content p {
       color: #707070;
       font-size: 16px; }
-    #features .section-content a {
+    #featuresSection .section-content a {
       text-decoration: none; }
-    #features .section-content .col {
+    #featuresSection .section-content .col {
       padding: 7% 8%;
       border-radius: 5px;
       cursor: pointer;
       overflow: hidden; }
-    #features .section-content .active {
+    #featuresSection .section-content .active {
       background: #1AC6FF; }
-      #features .section-content .active h4, #features .section-content .active p {
+      #featuresSection .section-content .active h4, #featuresSection .section-content .active p {
         color: white; }
-    #features .section-content .img {
+    #featuresSection .section-content .img {
       width: 100%;
       position: relative; }
-      #features .section-content .img .img2, #features .section-content .img .img3 {
+      #featuresSection .section-content .img .img2, #featuresSection .section-content .img .img3 {
         display: none; }
-      #features .section-content .img .img1 {
+      #featuresSection .section-content .img .img1 {
         transition: all 0.2s linear;
         transform: rotateX(88deg);
         transform-origin: bottom; }
-      #features .section-content .img .img2 {
+      #featuresSection .section-content .img .img2 {
         transition: all 0.2s linear;
         transform: rotateY(88deg);
         transform-origin: right; }
-      #features .section-content .img .img3 {
+      #featuresSection .section-content .img .img3 {
         transition: all 0.2s linear;
         transform: translate(600px); }
 
-#features-list {
+#features-listSection {
   text-align: center;
   padding-top: 100px;
   overflow: hidden; }
-  #features-list i {
+  #features-listSection i {
     color: #1AC6FF;
     margin-bottom: 10px;
     font-size: 3.5em; }
-  #features-list span {
+  #features-listSection span {
     color: black;
     font-weight: 400;
     font-size: 16px;
     display: block;
     text-transform: uppercase;
     margin: 0 0 10px; }
-  #features-list p {
+  #features-listSection p {
     color: #9C9C9C;
     margin: 0 0 10px;
     line-height: 25px;
     font-size: 16px; }
-  #features-list .iconDiv {
+  #features-listSection .iconDiv {
     width: 100%;
     min-height: 15em; }
-  #features-list .row:first-child .iconDiv {
+  #features-listSection .row:first-child .iconDiv {
     transform: translateX(800px);
     transition: all 0.5s linear; }
-  #features-list .row:last-child .iconDiv {
+  #features-listSection .row:last-child .iconDiv {
     transform: translateX(-1250px);
     transition: all 0.5s linear; }
-  #features-list .col-md-3, #features-list .col-sm-6, #features-list .col-xs-12:hover > i {
+  #features-listSection .col-md-3, #features-listSection .col-sm-6, #features-listSection .col-xs-12:hover > i {
     color: #66d9ff; }
 
-#news-letter {
+#news-letterSection {
   background: url(../../img/background.jpg) center;
   background-attachment: fixed;
   color: white;
   overflow: hidden; }
-  #news-letter .leftDiv {
+  #news-letterSection .leftDiv {
     width: 100%;
     transform: translateX(-500px);
     transition: all 0.5s linear; }
-    #news-letter .leftDiv h1 {
+    #news-letterSection .leftDiv h1 {
       line-height: 1;
       font-size: 42px; }
-  #news-letter .main {
+  #news-letterSection .main {
     min-height: 10em; }
-  #news-letter .form {
+  #news-letterSection .form {
     transform: translate(800px);
     transition: all 0.5s linear;
     margin: 20px 0; }
-    #news-letter .form input {
+    #news-letterSection .form input {
       border-width: 1px 1px 1px 3px;
       border-color: #1ac6ff;
       border-top-color: #d7d7d7;
@@ -222,7 +245,7 @@ body {
       height: 44px;
       border-radius: 0;
       font-size: 17px; }
-    #news-letter .form button {
+    #news-letterSection .form button {
       border-color: #ffffff;
       background-color: transparent;
       color: #ffffff;
@@ -230,124 +253,124 @@ body {
       border: 1px solid white;
       margin-left: 2%; }
 
-#product {
+#productSection {
   padding-top: 30px;
   overflow: hidden; }
-  #product .container {
+  #productSection .container {
     transform: translateY(300px);
     transition: all 0.2s linear; }
-  #product .table {
+  #productSection .table {
     text-align: center;
     text-transform: uppercase; }
-  #product .title {
+  #productSection .title {
     width: 100%;
     padding: 20px 0 18px;
     font-size: 25px; }
-  #product .tableprice {
+  #productSection .tableprice {
     width: 100%;
     padding: 15px;
     background: #F3F3F3; }
-    #product .tableprice .price {
+    #productSection .tableprice .price {
       font-size: 100px; }
-  #product .detail {
+  #productSection .detail {
     padding: 1% 14%;
     width: 100%;
     background: #F8F8F8; }
-    #product .detail p {
+    #productSection .detail p {
       border-bottom: 1px solid lightgray;
       padding: 15px 0; }
-      #product .detail p b {
+      #productSection .detail p b {
         color: #8d8d8d; }
-    #product .detail a {
+    #productSection .detail a {
       padding: 5% 24%;
       background: transparent;
       margin-bottom: 35px; }
-    #product .detail .none {
+    #productSection .detail .none {
       border: 0; }
-    #product .detail .border {
+    #productSection .detail .border {
       border: 1px solid #1AC6FF; }
 
-#awards {
+#awardsSection {
   padding-top: 80px;
   overflow: hidden; }
-  #awards .logo {
+  #awardsSection .logo {
     width: 100%;
     min-height: 5em;
     margin-bottom: 40px;
     margin-top: 40px; }
-  #awards #textDiv, #awards .logo {
+  #awardsSection #textDiv, #awardsSection .logo {
     transform: translateY(-250px);
     transition: all 0.3s linear; }
 
-#feedback {
+#feedbackSection {
   background: url(../../img/background.jpg);
   color: white;
   overflow: hidden; }
-  #feedback #textDiv, #feedback #down {
+  #feedbackSection #textDiv, #feedbackSection #down {
     margin-bottom: 14px;
     transform: translateY(-250px);
     transition: all 0.3s linear; }
-  #feedback p {
+  #feedbackSection p {
     line-height: 30px;
     font-size: 16px; }
-  #feedback i {
+  #feedbackSection i {
     color: #20befa;
     line-height: 50px; }
 
-#bootpart {
+#bootpartSection {
   overflow: hidden; }
-  #bootpart #botpart {
+  #bootpartSection #botpart {
     padding: 40px 0;
     transform: translateY(-120px);
     transition: all 0.3s linear; }
-    #bootpart #botpart img {
+    #bootpartSection #botpart img {
       width: 70px;
       margin-right: 5%;
       margin-bottom: 20px; }
-    #bootpart #botpart h4, #bootpart #botpart p {
+    #bootpartSection #botpart h4, #bootpartSection #botpart p {
       color: #E6E6E6; }
 
-#team {
+#teamSection {
   padding: 30px 0; }
-  #team h1 {
+  #teamSection h1 {
     font-size: 45px; }
-  #team p {
+  #teamSection p {
     font-size: 16px;
     line-height: 25px; }
-  #team .row:last-child {
+  #teamSection .row:last-child {
     padding-top: 8%; }
-    #team .row:last-child .team {
+    #teamSection .row:last-child .team {
       overflow: hidden; }
-    #team .row:last-child h4 {
+    #teamSection .row:last-child h4 {
       color: #20befa; }
-    #team .row:last-child .down {
+    #teamSection .row:last-child .down {
       transform: translateY(-800px);
       transition: all 0.5s linear; }
-    #team .row:last-child .up {
+    #teamSection .row:last-child .up {
       transform: translateY(800px);
       transition: all 0.5s linear; }
 
-#footer1 {
+#contactSection {
   padding: 30px 0;
   background-color: #20befa;
   color: white; }
-  #footer1 h1 {
+  #contactSection h1 {
     font-size: 45px; }
-  #footer1 p {
+  #contactSection p {
     line-height: 30px;
     font-size: 16px; }
-  #footer1 button {
+  #contactSection button {
     margin-top: 5%;
     color: white;
     padding: 10px 30px;
     background: transparent;
     border-color: white; }
-    #footer1 button:hover {
+    #contactSection button:hover {
       transition: all 0.5s;
       background-color: white;
       color: #20befa;
       border-color: white; }
-  #footer1 i {
+  #contactSection i {
     font-size: 70px; }
 
 #footer {

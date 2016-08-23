@@ -56,7 +56,7 @@ body{
 }
 .textLeft,.img-left{
 	 	transform: translateX(-800px);
-	    transition:all 1s;
+	    transition:all 1s ease;
 	 	
 	 }
 	 .textRight,.img-right{
@@ -70,7 +70,7 @@ body{
 // HEAD
 #head{
 	background:url(../../img/background.jpg);
-	min-height: 666px;
+	
 	background-attachment: fixed;
 	background-position: center;
 	
@@ -78,12 +78,49 @@ body{
 	color: rgba(240, 240, 240, 0.8);
 	text-transform: uppercase;
 	font-size: 14px;
-	transition:all 0.5s linear;
+	
      }
      a:hover{
      	background: transparent;
      	color:aqua;
      }
+     #launch{
+	margin: 0 auto;
+	min-height: 640px;
+	 color: white;
+
+	 #top1{
+	 	display: none;
+	 	padding-top: 150px;
+		 h1{
+		 	
+		 	font-size: 4em;
+		 }
+		 p{
+		 	margin-top: 25px;
+		 	font-size: 1.5em;
+		 }
+	}
+
+	 .btn-info{
+	 	margin-top: 3%;
+	 	padding: 10px 45px;
+	 	margin-right: 1.2%;
+	 }
+	 button:last-child{
+	 	margin-top: 3%;
+	 	padding: 10px 25px;
+	 	background: transparent;
+	 	border: 1px solid white;
+	 
+
+		 &:hover{
+		 	background-color: white;
+		 	color: 	#20befa;
+		 	transition: all 0.5s;
+		 }
+	}
+}
 }
 
 // LOGO SECTION 
@@ -106,7 +143,7 @@ body{
  }
 
 // ABOUT SECTION 
-#about{
+#aboutSection{
 	min-height: 585px;
 	background: white;
 	padding-top:60px;
@@ -154,7 +191,7 @@ body{
 }
 
 // PROCESS SECTION 
- #process{
+ #processSection{
  	overflow: hidden;
  
 	img{
@@ -173,7 +210,7 @@ body{
  }
 
 // FEATURES SECTION 
-#features{
+#featuresSection{
 	background: #F0F0F0;
 	overflow: hidden;
 	.section-content{
@@ -232,7 +269,7 @@ body{
 }
 
 // FEATURES LIST
-#features-list{
+#features-listSection{
 	text-align: center;
 	padding-top:100px;
 	overflow: hidden;
@@ -277,7 +314,7 @@ body{
 }
 
 // NEWS-LETTER
-#news-letter{
+#news-letterSection{
 	background:url(../../img/background.jpg) center;
 	background-attachment: fixed;
 	color:white;
@@ -320,7 +357,7 @@ body{
 }
 
 // PRODUCT
- #product{
+ #productSection{
  	padding-top:30px;
  	overflow: hidden;
  	.container{
@@ -372,7 +409,7 @@ body{
 }
 
 // AWARDS
-#awards{
+#awardsSection{
 	padding-top: 80px;
 	overflow: hidden;
 	.logo{
@@ -388,7 +425,7 @@ body{
 }
 
 // FEEDBACK
-#feedback{
+#feedbackSection{
 background:url(../../img/background.jpg);
 color:white;
 overflow: hidden;
@@ -412,7 +449,7 @@ overflow: hidden;
 		 
 }
 //BOOTPART
-#bootpart{
+#bootpartSection{
 	overflow: hidden;
 	#botpart{
 		padding: 40px 0;
@@ -430,7 +467,7 @@ overflow: hidden;
 }
 
 //TEAM
-#team{
+#teamSection{
 	padding: 30px 0;
 	h1{
 
@@ -460,7 +497,7 @@ overflow: hidden;
 }
 
 // FOOTER1
-#footer1{
+#contactSection{
 	padding: 30px 0;
 	background-color: #20befa;
 	color: white;
